@@ -3,22 +3,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PONG</title>
+    <title>Table Tennis</title>
 </head>
 <body>
     <canvas id="canvas" width="640" height="480"></canvas>
     <script>
-        var canvas = document.getElementById("canvas");
-        var ctx = vancas.getContext("2d"); 
+        var canvas = document.getElementById("canvas"); 
+        var ctx = canvas.getContext("2d"); 
         function tick() {
             draw();
             window.setTimeout("tick()", 1000/60);
         }
-        function draw () {
+        function draw() {
             ctx.fillStyle = "black";
             ctx.fillRect(0, 0, 640, 480); 
         }
-        tick();
+        tick(); 
     </script>
 </body>
 </html>
